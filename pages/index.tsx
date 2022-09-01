@@ -11,7 +11,7 @@ interface Props {
 }
 
 
-const Home: NextPage = ({posts}: Props) => {
+const NextPage = ({posts}: Props) => {
   console.log(posts);
   return (
     <div className="max-w-7xl mx-auto " >
@@ -63,7 +63,7 @@ const Home: NextPage = ({posts}: Props) => {
   )
 }
 
-export default Home
+export default NextPage;
 
 
 
