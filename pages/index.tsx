@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import Header from '../components/Header'
 import {sanityClient, urlFor} from '../sanity'
 import {Post} from '../typings'
@@ -10,7 +11,7 @@ interface Props {
 }
 
 
-const NextPage = ({posts}: Props) => {
+export default function Home({posts}: Props){
   console.log(posts);
   return (
     <div className="max-w-7xl mx-auto " >
@@ -62,7 +63,7 @@ const NextPage = ({posts}: Props) => {
   )
 }
 
-export default NextPage;
+
 
 
 
